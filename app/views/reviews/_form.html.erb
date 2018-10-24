@@ -1,0 +1,5 @@
+<%= simple_form_for @review do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating, collection: Review::RATINGS, prompt: "Pick one" %>
+  <%= f.button :submit %>
+<% end %>

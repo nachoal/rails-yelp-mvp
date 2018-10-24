@@ -12,7 +12,12 @@
   </head>
 
   <body>
-    <%= render "navbar" %>
-    <%= yield %>
+    <%= render "layouts/navbar" %>
+    <div id="wrapper">
+      <% if flash[:notice] || flash[:alert] || flash[:danger] %>
+        <%=render "layouts/flashes"  %>
+      <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>

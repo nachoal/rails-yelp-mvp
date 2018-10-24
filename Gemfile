@@ -8,6 +8,8 @@ gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
 # Necessary if Rails 5.1 or higher 
 gem 'jquery-rails' 
 
